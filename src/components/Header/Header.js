@@ -11,18 +11,33 @@ export default function Header(props) {
           <Route exact path="/">
             <div className='header__wrapper'>
             <div className='header__container'>
-              <Link><img className='header__logo' src={logo} alt='Логотип проекта'></img></Link>
+              <Link to="/"><img className='header__logo' src={logo} alt='Логотип проекта'></img></Link>
               <Navigation /> 
             </div>   
             </div>
           </Route>
 
           <Route exact path="/profile">
-            <div className='header__container'>
-              <Link><img className='header__logo' src={logo} alt='Логотип проекта'></img></Link>
+            <div className='header__container-movies'>
+              <Link to="/"><img className='header__logo' src={logo} alt='Логотип проекта'></img></Link>
               <Navigation /> 
             </div>   
-          </Route>    
+          </Route> 
+
+          <Route exact path="/movies">
+            <div className='header__container-movies'>
+              <Link to="/"><img className='header__logo' src={logo} alt='Логотип проекта'></img></Link>
+              <Navigation /> 
+            </div>   
+          </Route>
+
+          <Route exact path="/saved-movies">
+            <div className='header__container-movies'>
+              <Link to="/"><img className='header__logo' src={logo} alt='Логотип проекта'></img></Link>
+              <Navigation /> 
+            </div>   
+          </Route>   
+
         </Switch>  
       
     </header>

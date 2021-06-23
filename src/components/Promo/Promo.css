@@ -4,6 +4,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url('../../images/logo-web.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .promo__title {
