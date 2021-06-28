@@ -9,6 +9,7 @@
     width: 100%;
     max-width: 400px;
     margin: auto;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +76,7 @@
   .register__button {
     color: #fff;
     background: #4285F4;
-    margin: 150px 0 16px;
+    margin: 69px 0 16px;
     height: 45px;
     border-radius: 3px;
     padding: 0;
@@ -86,6 +87,7 @@
     font-weight: 500;
     line-height: 17px;
     cursor: pointer;
+    transition: opacity .5s;
   }
 
   .register__button:hover {
@@ -126,6 +128,11 @@
     .register__logo {
       margin-bottom: 50px;
     }
+
+    .register__title {
+      margin-top: 0;
+      margin-bottom: 80px;
+    }
   
     .register__form {
       width: 100%;
@@ -134,5 +141,19 @@
   
     .register__error-label:first-of-type {
       margin-bottom: 20px;
+    }
+
+    .register__button {
+      margin: 157px 0 14px;
+    }
+
+    .register__text {
+      font-size: 12px;
+      line-height: 14.52px;
+    }
+    
+    .register__link {  
+      font-size: 12px;
+      line-height: 14.52px;
     }
   }

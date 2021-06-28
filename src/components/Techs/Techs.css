@@ -1,4 +1,4 @@
-.techs {
+  .techs {
     background-color: #272727;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
     font-weight: 400;
     line-height: 26.63px;
     letter-spacing: -0.04em;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #DADADA;
     margin: 0;
     padding-bottom: 23px;
     color: white;
@@ -62,7 +62,7 @@
     background-color: #303030;
     font-size: 14px;
     font-weight: 400;
-    line-height: 17px;
+    line-height: 16.94px;
     letter-spacing: -0.04em;
     display: flex;
     align-items: center;
@@ -72,6 +72,7 @@
   
   @media screen and (max-width: 1023px) {
     .techs {
+      width: calc(100% - 50px * 2);
       padding: 90px 50px;
     }
   
@@ -98,13 +99,16 @@
   
   @media screen and (max-width: 767px) {
     .techs {
+      width: calc(100% - 18px * 2);
       padding: 70px 18px;
+      background-color: #202020;
     }
   
     .techs__title {
       font-size: 18px;
       line-height: 22px;
       padding-bottom: 28px;
+      border-color: #000000;
     }
   
     .techs__subtitle {

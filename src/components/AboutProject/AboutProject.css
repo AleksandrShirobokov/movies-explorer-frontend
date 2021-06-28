@@ -1,5 +1,5 @@
 .about-project {
-    box-sizing: border-box;
+    max-width: 1280px;
     background-color: #202020;
     padding: 110px 70px;
   }
@@ -11,7 +11,7 @@
     font-weight: 400;
     line-height: 26.63px;
     letter-spacing: -0.04em;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid #DADADA;
     padding-bottom: 23px;
     margin: 0;
   }
@@ -31,7 +31,7 @@
   .about-project__diagram-text {  
     font-size: 14px;
     font-weight: 400;
-    line-height: 17px;
+    line-height: 16.94px;
     text-align: center;
     padding: 9px 0;
     margin: 0;
@@ -47,14 +47,15 @@
   .about-project__diagram-text_bg_gray {
     grid-column-start: 2;
     grid-column-end: 7;
-    background: #f2f2f2;
-    color: #000;
+    background: #303030;
+    color: #FFFFFF;
   }
   
   .about-project__description_text_backend {
     grid-column-start: 1;
     grid-column-end: 2;
     margin-top: 14px;
+    padding: 0;
     font-weight: 500;
     color: #a0a0a0;
   }
@@ -63,6 +64,7 @@
     grid-column-start: 2;
     grid-column-end: 7;
     margin-top: 14px;
+    padding: 0;
     font-weight: 500;
     color: #a0a0a0;
   }
@@ -87,27 +89,21 @@
   
   @media screen and (max-width: 1023px) {
     .about-project {
-      max-width: calc(768px - 50px * 2);
-      margin: 90px auto;
+      width: calc(100% - 50px * 2);
+      padding: 90px 50px;
+    }
+
+    .about-project__text {
+      font-size: 12px;
+      line-height: 18px;
     }
   
-    .about-project__diagram  {
-      margin: 70px auto 0;
-    }
-    
-    .about-project__description_text_frontend {
-      margin-top: 5px;
-    }
-  
-    .about-project__description_text_backend {
-      margin-top: 5px;
-    }
   }
   
   @media screen and (max-width: 767px) {
     .about-project {
-      max-width: calc(320px - 18px * 2);
-      margin: 70px auto;
+      width: calc(100% - 18px * 2);
+      padding: 70px 18px;
     }
   
     .about-project__text-section {
@@ -121,15 +117,32 @@
     }
     
     .about-project__description_text_frontend {
-      margin-top: 5px;
+      margin-top: 10px;
     }
   
     .about-project__description_text_backend {
-      margin-top: 5px;
+      margin-top: 10px;
     }
   
     .about-project__diagram-text {  
       font-size: 11px;
       line-height: 13px;
+    }
+
+    .about-project__title {
+      font-size: 18px;
+      line-height: 21.78px;
+      padding-bottom: 28px;
+    }
+
+    .about-project__subtitle {  
+      font-size: 18px;
+      line-height: 21.78px;
+    }
+
+    .about-project__text {
+      font-size: 11px;
+      line-height: 16px;
+      margin-top: 16px;
     }
   }

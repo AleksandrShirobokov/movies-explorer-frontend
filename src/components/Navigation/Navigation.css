@@ -4,15 +4,29 @@
     justify-content: space-between;
     width: 100%;
   }
+
+  .navigation__container_type_login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  .navigation__container_type_movies-login {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1280px;
+  }
   
   .navigation__link {
     text-decoration: none;
+    font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-    padding: 8px 20px;
   }
   
   .navigation__link_type_signup {
+    margin-right: 30px;
     color: white;
     transition: opacity .5s;
   }
@@ -26,6 +40,13 @@
     background-color: #3DDC84;
     border-radius: 3px;
     transition: opacity .5s;
+    padding: 8px 20px;
+  }
+
+  .navigation__container_type_movies {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 44px;
   }
 
   .navigation__link_type_movies {
@@ -88,9 +109,38 @@
     padding: 7px;
   }
   
+  @media screen and (max-width: 1023px) {
+    .navigation__burger-button {
+      display: block;
+    }
+  
+    .navigation__movies-block {
+      display: none;
+    }
+  
+    .navigation__login-block {
+      display: none;
+    }
+  
+    .navigation__burger-links-block {
+      padding: 144px 10px 0px 10px;
+    }
+  
+    .navigation__burger-link_type_account {
+      margin-top: 444px;
+    }
+  }
+  
   @media screen and (max-width: 767px) {
     .navigation__link {
       font-size: 10px;
+    }
+
+    .navigation__link_type_signup {
+      margin-right: 14px;
+    }
+
+    .navigation__link_type_signin {
       padding: 5px 12px;
     }
   }

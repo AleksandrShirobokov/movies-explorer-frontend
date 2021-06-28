@@ -5,11 +5,13 @@ import logo from '../../images/profile-logo.svg'
 
 export default function Navigation(props) {
   return (
-    <div className='navigation__container navigation__container_type_login'>
+    <div className='navigation__container'>
       <Switch>
         <Route exact path="/">
+          <div className='navigation__container_type_login'>
           <Link to="/signup" className="navigation__link navigation__link_type_signup">Регистрация</Link>
           <Link to="/signin" className="navigation__link navigation__link_type_signin">Войти</Link>
+          </div>
         </Route>
 
         <Route exact path="/profile">
@@ -24,7 +26,7 @@ export default function Navigation(props) {
         </Route>
 
         <Route exact path="/movies">
-        <div className="navigation__link navigation__link_type_movies-container">
+        <div className="navigation__container_type_movies">
             <Link to="/movies" className="navigation__link navigation__link_type_movies">Фильмы</Link>
             <Link to="/saved-movies" className="navigation__link navigation__link_type_saved-movies">Сохранённые фильмы</Link>
           </div>
@@ -35,7 +37,7 @@ export default function Navigation(props) {
         </Route>
 
         <Route exact path="/saved-movies">
-        <div className="navigation__link navigation__link_type_movies-container">
+        <div className="navigation__container_type_movies">
             <Link to="/movies" className="navigation__link navigation__link_type_movies">Фильмы</Link>
             <Link to="/saved-movies" className="navigation__link navigation__link_type_saved-movies">Сохранённые фильмы</Link>
           </div>

@@ -4,6 +4,7 @@ import './Profile.css';
 export default function Profile(props) {
   return (
     <section className='profile'>
+      <div className='profile__container'>
       <h1 className='profile__greeting'>Привет, Александр!</h1>
       <form className='profile__form'>
         <label htmlFor='name' className='profile__form-label'>
@@ -17,6 +18,7 @@ export default function Profile(props) {
         <button className='profile__button profile__button_type_submit' type='submit'>Редактировать</button>
         <button className='profile__button profile__button_type_logout' type='button'>Выйти из аккаунта</button>
       </form>
+      </div>
     </section>
   )
 };

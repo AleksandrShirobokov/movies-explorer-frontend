@@ -18,21 +18,21 @@ export default function Header(props) {
           </Route>
 
           <Route exact path="/profile">
-            <div className='header__container-movies'>
+            <div className='header__container'>
               <Link to="/"><img className='header__logo' src={logo} alt='Логотип проекта'></img></Link>
               <Navigation /> 
             </div>   
           </Route> 
 
           <Route exact path="/movies">
-            <div className='header__container-movies'>
+            <div className='header__container'>
               <Link to="/"><img className='header__logo' src={logo} alt='Логотип проекта'></img></Link>
               <Navigation /> 
             </div>   
           </Route>
 
           <Route exact path="/saved-movies">
-            <div className='header__container-movies'>
+            <div className='header__container'>
               <Link to="/"><img className='header__logo' src={logo} alt='Логотип проекта'></img></Link>
               <Navigation /> 
             </div>   
